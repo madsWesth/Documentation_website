@@ -1,0 +1,30 @@
+{
+  "script": {
+    "start-prod": "node app.js",
+    "start-dev": "nodemon.cmd app.js"
+  } ,
+  "name": "documentation_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madsWesth/Documentation_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madsWesth/Documentation_website/issues"
+  },
+  "homepage": "https://github.com/madsWesth/Documentation_website#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
