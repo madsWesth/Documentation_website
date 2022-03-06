@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="%%STYLESHEET">
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+     integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>%%TITLE_PLACEHOLDER</title>
 </head>
 <body>
-<nav>
-
+<nav class="navbar navbar-default">
+    <ul class="nav nav-pills">
+        <li role="presentation" class="%%HOME_ACTIVE"><a href="/">Home</a></li>
+        <li role="presentation" class="%%NODE_ACTIVE"><a href="/node">NodeJS</a></li>
+        <li role="presentation" class="%%JS_CONCEPTS_ACTIVE"><a href="/Javascript_Concepts">Javascript Concepts</a></li>
+        <li role="presentation" class="%%REST_ACTIVE"><a href="/REST_API_and_Express">REST API and Express</a></li>
+        <li role="presentation" class="%%PROJECT_ACTIVE"><a href="/Project_Package_Manager">Project-/Package Manager</a></li>
+        <li role="presentation" class="%%ENVIRONMENTS_ACTIVE"><a href="/Environments">Environments</a></li>
+        <li role="presentation" class="%%STRATEGIES_ACTIVE"><a href="/Strategies_and_issues_serving_content">Strategies and issues serving content</a></li>
+        <li role="presentation" class="%%SSR_ACTIVE"><a href="/SSR">SSR</a></li>
+      </ul>
 </nav>

@@ -1,14 +1,12 @@
 {
-  "script": {
-    "start-prod": "node app.js",
-    "start-dev": "nodemon.cmd app.js"
-  } ,
   "name": "documentation_website",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-prod": "node app.js",
+    "start-dev": "nodemon.cmd app.js"
   },
   "repository": {
     "type": "git",
