@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
     <!-- Latest compiled and minified CSS Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-     integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./prism/prism.css">
     <title>%%TITLE_PLACEHOLDER</title>
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <ul class="nav nav-pills">
-        <li role="presentation" class="%%HOME_ACTIVE"><a href="/">Home</a></li>
-        <li role="presentation" class="%%NODE_ACTIVE"><a href="/node">NodeJS</a></li>
-        <li role="presentation" class="%%JS_CONCEPTS_ACTIVE"><a href="/Javascript_Concepts">Javascript Concepts</a></li>
-        <li role="presentation" class="%%REST_ACTIVE"><a href="/REST_API_and_Express">REST API and Express</a></li>
-        <li role="presentation" class="%%PROJECT_ACTIVE"><a href="/Project_Package_Manager">Project-/Package Manager</a></li>
-        <li role="presentation" class="%%ENVIRONMENTS_ACTIVE"><a href="/Environments">Environments</a></li>
-        <li role="presentation" class="%%STRATEGIES_ACTIVE"><a href="/Strategies_and_issues_serving_content">Strategies and issues serving content</a></li>
-        <li role="presentation" class="%%SSR_ACTIVE"><a href="/SSR">SSR</a></li>
-      </ul>
-</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand %%HOME_ACTIVE" href="/">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link %%NODE_ACTIVE" href="/node">Node.js</a>
+          <a class="nav-link %%JS_CONCEPTS_ACTIVE" href="/Javascript_Concepts">Javascript Concepts</a>
+          <a class="nav-link %%REST_ACTIVE" href="/REST_API_and_Express">REST API and Express</a>
+          <a class="nav-link %%PROJECT_ACTIVE" href="/Project_Package_Manager">Project-/Package Manager</a>
+          <a class="nav-link %%ENVIRONMENTS_ACTIVE" href="/Environments">Environments</a>
+          <a class="nav-link %%STRATEGIES_ACTIVE" href="/Strategies_and_issues_serving_content">Strategies and issues serving content</a>
+          <a class="nav-link %%SSR_ACTIVE" href="/SSR">SSR</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
