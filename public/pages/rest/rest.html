@@ -1,0 +1,26 @@
+<div style="margin: 2%;">
+<h1>REST API and Express</h1>
+<br>
+<h3>REST</h3>
+<p>REpresentational State Transfer is architecture that is stateless, which means that it is unconcerned with the client, in other words it doesn’t keep a session. It is meant to act the same regardless of the client and each request or response does not need information about previous communication.</p>
+<h3>REST API conventions</h3>
+<p>To make REST APIs easier to use for other developers it is nice to have a standardized way of structuring endpoints in the API. That way you can figure out how to use an API without studying the documentation. </p>
+<h3>JSON</h3>
+<p>JavaScriptObjectNotation is a file format that is popular to transfer data. JSON is very easy to read and write as a human unlike some other formats. Parsers are also available for most programming languages which makes it easy to work with. I've primarily used JSON with the REST APIs we have made.</p>
+<h3>Express</h3>
+<p><a href="https://expressjs.com/">Express</a> is a web framework according to their website. We have installed Express as a dependency and used it for both REST API and to serve a website.</p>
+<h3>Sending data</h3>
+<p>To send data with express the response object is used. The response object is a representation of the HTTP response.
+    This is code from the backend of this project
+    <pre><code class="language-js">        app.get("/", (req, res) => {
+            res.send(constructedFrontpage)
+        })</code></pre>
+    This serves a website that is rendered on the server SSR.
+    You can also send a file by using res.sendFile() and you can set the status code with res.status(200).send({})
+    </p>
+<h3>Serving Static Assets in Express</h3>
+<p>To only allow some files to be shared we use
+    <pre><code class="language-js">       app.use(express.static("public"))</code></pre>
+    This allows content in the public folder to be served. This folder is called public by convention in node.
+    </p>
+</div>
