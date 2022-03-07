@@ -11,19 +11,17 @@ const footer = fs.readFileSync("./public/components/footer.html").toString()
 
 //content
 const frontpage                     = fs.readFileSync("./public/pages/frontpage/frontpage.html").toString()
-const javascripConceptsPage         = fs.readFileSync("./public/pages/javascript_concepts/javascript_concepts.html").toString()
+const javascriptConceptsPage        = fs.readFileSync("./public/pages/javascript_concepts/javascript_concepts.html").toString()
 const nodePage                      = fs.readFileSync("./public/pages/node/node.html").toString()
 const projectPackageManagerPage     = fs.readFileSync("./public/pages/project_package_manager/project_package_manager.html").toString()
 const restPage                      = fs.readFileSync("./public/pages/rest/rest.html").toString()
-const strategiesPage                = fs.readFileSync("./public/pages/strategies/strategies.html").toString()
 
 //constructed webpages
 const constructedFrontpage                   = header.replace("%%TITLE_PLACEHOLDER", "Home").replace("%%HOME_ACTIVE", "active") + frontpage + footer
-const constructedJavascriptConceptsPage      = header.replace("%%TITLE_PLACEHOLDER", "Javascript concepts").replace("%%JS_CONCEPTS_ACTIVE", "active") + javascripConceptsPage + footer
+const constructedJavascriptConceptsPage      = header.replace("%%TITLE_PLACEHOLDER", "Javascript concepts").replace("%%JS_CONCEPTS_ACTIVE", "active") + javascriptConceptsPage + footer
 const constructedNodePage                    = header.replace("%%TITLE_PLACEHOLDER", "Node").replace("%%NODE_ACTIVE", "active") + nodePage + footer
 const constructedProjectPackageManagerPage   = header.replace("%%TITLE_PLACEHOLDER", "Project-/Package Manager").replace("%%PROJECT_ACTIVE", "active") + projectPackageManagerPage + footer
 const constructedRestPage                    = header.replace("%%TITLE_PLACEHOLDER", "REST and Express").replace("%%REST_ACTIVE", "active") + restPage + footer
-const constructedStrategiesPage              = header.replace("%%TITLE_PLACEHOLDER", "Strategies and issues serving content").replace("%%STRATEGIES_ACTIVE", "active") + strategiesPage + footer
 
 app.use(express.static("public"))
 
@@ -46,19 +44,6 @@ app.get("/REST_API_and_Express", (req, res) => {
 app.get("/Project_Package_Manager", (req, res) => {
     res.send(constructedProjectPackageManagerPage)
 })
-
-app.get("/Environments", (req, res) => {
-    res.send(constructedEnvironmentPage)
-})
-
-app.get("/Strategies_and_issues_serving_content", (req, res) => {
-    res.send(constructedStrategiesPage)
-})
-
-app.get("/SSR", (req, res) => {
-    res.send(constructedSsrPage)
-})
-
 
 
 //fallback port
